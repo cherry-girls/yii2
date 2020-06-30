@@ -125,5 +125,14 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
-    
+
+    /**
+     * Displays about page.
+     *
+     * @return string
+     */
+    public function actionSay($message='hello every day')
+    {
+        return $this->render('say',['message'=>$message]);
+    }
 }
